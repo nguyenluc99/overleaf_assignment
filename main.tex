@@ -1,0 +1,88 @@
+\documentclass[a4paper,10pt]{article}
+% \usepackage{hyperref}
+% \urlstyle{same}   a
+\usepackage[utf8]{inputenc}
+
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb} % use this
+\usepackage{listings}
+\usepackage{graphicx}
+\graphicspath{{./Images/}}
+\newcommand\calculategraphicstargetheight[1]{%
+     \setlength\graphht{\textheight 
+                       -\parskip
+                       -\abovecaptionskip -\belowcaptionskip
+                       -(12pt * #1) % assuming baselineskip of 12pt in caption
+                       }}
+                       
+\usepackage{color}
+ \newcommand{\db}{de Bruijn } 
+ \newcommand{\Db}{De Bruijn } 
+% \usepackage{enumerate}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+
+
+\title{Graduation research 1:
+\\
+\large Mathematical Symbol Recognition and Applications
+}
+
+% \subtitle{aaa}
+\author{Nguyen Van Luc}
+\date{June 2021}
+
+\begin{document}
+\input{titlePage}
+\maketitle
+\tableofcontents
+
+\newpage
+\input{1_Introduction.tex}
+
+%\newpage
+%\input{2_FundamentalConcepts}
+%
+%\newpage
+%\input{3_RelatedResearch}
+%
+%\newpage
+%\input{4_CurrentResearch}
+%
+%\newpage
+%\input{5_Conclusion}
+% Introduction
+% Fundamental principles
+% Current work/solution
+% Current result
+% Conclusion, comparison
+
+\bibliographystyle{IEEEtran}
+\bibliography{Reference.bib}
+\nocite{*}
+
+
+\end{document}
+
