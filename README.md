@@ -50,3 +50,6 @@ tlmgr install [package_name]
 ```
 For example: ```tlmgr install multirow```
 </ol>
+
+Logo HUST can be directly imported from GitHub or via link:
+https://raw.githubusercontent.com/nguyenluc99/overleaf_assignment/main/Images/Logo_Hust.png
